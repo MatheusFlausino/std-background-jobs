@@ -1,0 +1,26 @@
+{
+  "name": "std-background-jobs",
+  "version": "1.0.0",
+  "description": "cadastro de usuario em massa com upload de CSV",
+  "main": "index.js",
+  "author": "matheus flausino <matheusflausino@ymail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npm-run-all -p dev:*",
+    "dev:server": "node src/server.js",
+    "dev:queue": "node src/queue.js",
+    "db:migration": "node db/index.js"
+  },
+  "dependencies": {
+    "bull": "^3.13.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "knex": "^0.20.11",
+    "multer": "^1.4.2",
+    "pg": "^7.18.2"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "sqlite3": "^4.1.1"
+  }
+}
