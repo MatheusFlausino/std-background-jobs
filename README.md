@@ -13,7 +13,7 @@
 
 ##  Instalação e execução
 
-[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://github.com/MatheusFlausino/std-background-jobs/blob/master/insomnia.json)
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://raw.githubusercontent.com/MatheusFlausino/std-background-jobs/master/insomnia.json)
 
 1. Faça um clone desse repositório e [instale o docker](https://docs.docker.com/install/) ;
 2. Copie o arquivo `.env.example` e crie um arquivo `.env` com as credenciais do Redis e do banco;
