@@ -11,6 +11,8 @@ const port = process.env.PORT || 3000
 app.use(express.json());
 
 app.post('/usuario', usuarioController.store);
+app.get('/usuario', usuarioController.index);
+app.get('/usuario/:id', usuarioController.show);
 app.post('/usuario/upload', upload.single('usuarios'), usuarioController.upload);
 
 app.listen(port, function () {

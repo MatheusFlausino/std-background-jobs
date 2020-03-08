@@ -23,6 +23,22 @@ module.exports = {
 
     return res.json(usuario);
   },
+  async index (req, res){
+    const Usuarios = connection('usuarios');
+
+    const data = await Usuarios.select();
+
+    res.json({ data });
+  },
+  async show (req, res){
+    const { params } = req
+
+    const Usuarios = connection('usuarios');
+
+    const data = await Usuarios.select().where('id', params.id);
+
+    res.json({ data });
+  },
   async upload(req, res){
     const { file } = req
 
