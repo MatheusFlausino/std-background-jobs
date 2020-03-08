@@ -7,16 +7,18 @@
   "license": "MIT",
   "scripts": {
     "dev": "npm-run-all -p dev:*",
-    "dev:server": "node src/server.js",
-    "dev:queue": "node src/queue.js",
+    "dev:server": "nodemon src/server.js",
+    "dev:queue": "nodemon src/queue.js",
     "db:migration": "node db/index.js"
   },
   "dependencies": {
     "bull": "^3.13.0",
+    "csv-parser": "^2.3.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "knex": "^0.20.11",
     "multer": "^1.4.2",
+    "nodemon": "^2.0.2",
     "pg": "^7.18.2"
   },
   "devDependencies": {
